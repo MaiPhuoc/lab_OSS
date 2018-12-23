@@ -17,8 +17,9 @@ int main(void)
   if (pid == 0) {
   	sleep(2);
   } else if (pid > 0) {
- 	 printf("Дочерних процессов: %d.\n", n);
+ 	 printf("Process: %d", n);
   	 wait(0);
   }
   return 0;
 }
+//Количество зависить от состояния системы
