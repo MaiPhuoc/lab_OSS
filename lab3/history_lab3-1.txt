@@ -1,0 +1,318 @@
+    1  userdel Bamboo
+    2  sudo userdel Bamboo
+    3  su
+    4  users
+    5  users --help
+    6  man users
+    7  exit
+    8  su
+    9  eixt
+   10  exit
+   11  su
+   12  exit
+   13  clear
+   14  cd ~
+   15  mkdir lab2
+   16  cd lab2
+   17  mkdir test
+   18  touch file
+   19  ls -alt
+   20  mv test file
+   21  mv file test
+   22  cd test
+   23  ls
+   24  ls -alt
+   25  ll file
+   26  chmod 000 file
+   27  echo "test" >> file
+   28  cat file
+   29  chmod 200 file
+   30  ll file
+   31  echo "test" >> file
+   32  cat file
+   33  chmod 240 file
+   34  ll file
+   35  cat file
+   36  chmod 640 file
+   37  ll file
+   38  cat file
+   39  ls
+   40  mkdir dir
+   41  cd dir
+   42  touch new_file
+   43  echo "file 2">> new_file 
+   44  ls
+   45  ll new_file 
+   46  cd ..
+   47  ls
+   48  chmod 600 dir
+   49  cd dir
+   50  umask dir
+   51  chmod 755 dir
+   52  cd dir
+   53  ls
+   54  chmod 600 dir
+   55  chmod 600 new_file 
+   56  re new_file 
+   57  rm new_file 
+   58  touch new_file
+   59  echo "file 2">> new_file 
+   60  cd ..
+   61  ls
+   62  id
+   63  chown root file
+   64  sudo chown root file
+   65  sudo chown root:root file
+   66  touch file1
+   67  ll file1
+   68  chmod 600 file1
+   69  ll file1
+   70  rm file1
+   71  umask 0077
+   72  touch file1
+   73  ll file1
+   74  umask 0000
+   75  > file2
+   76  ll file2
+   77  pwn
+   78  pwd
+   79  cat file
+   80  vim file
+   81  history >> history_lab2.txt
+   82  cat history_lab2.txt 
+   83  echo "1.Danh rang"
+   84  echo "1.Danh rang" > TODO.txt
+   85  gedit TODO.txt 
+   86  ls
+   87  mkdir lab3
+   88  cd lab3
+   89  ls
+   90  >hello.sh
+   91  gegit hello.sh
+   92  gedit hello.sh
+   93  bash hello.sh 
+   94  chmod +x hello.sh
+   95  ./hello.sh 
+   96  hello.sh
+   97  cd ..
+   98  ls
+   99  mkdir bin
+  100  cd bin
+  101  cd ..
+  102  cd lab3
+  103  mv hello.sh ~/bin
+  104  hello.sh
+  105  cd ..
+  106  mv bin lab3
+  107  hello.sh
+  108  ls
+  109  cd lab3
+  110  mv bin ~
+  111  hello.sh
+  112  mkdir scripts
+  113  yum install -y git
+  114  su
+  115  git init
+  116  touch README
+  117  gedit README
+  118  git config --global user.name "maitanphuoc"
+  119  git config --global user.email "maiphuocmephi@gmail.com"
+  120  git add README
+  121  git commit -m 'Added README' README
+  122  cat REAME
+  123  cat README
+  124  history
+  125  pwd
+  126  ls
+  127  cd scripts/
+  128  gedit make_shared.sh
+  129  git add make_shared.sh
+  130  git commit -m '1.1 - create shared' make_shared.sh
+  131  gedit count_txt.sh
+  132  cp count_txt.sh ~/bin
+  133  count_txt.sh
+  134  cd ~/phuoc/bin
+  135  cd ~
+  136  ls
+  137  cd bin
+  138  ls
+  139  ls- alt
+  140  ls -alt
+  141  chmod +x count_txt.sh 
+  142  ls -l
+  143  cd ~/lab3/
+  144  ls
+  145  count_txt.sh 
+  146  cd ~
+  147  ls
+  148  history >history_lab3.txt
+  149  count_txt.sh 
+  150  ls
+  151  cd lab3
+  152  cd scripts/
+  153  ls
+  154  git add count_txt.sh 
+  155  git commit -m '1.2 - count txt file in home' count_txt.sh 
+  156  cat count_txt.sh 
+  157  env
+  158  echo #PATH
+  159  env|sort
+  160  gedit sort_env.txt
+  161  rm sort_env.txt
+  162  ls
+  163  gedit sort_env.sh
+  164  bash sort_env.sh 
+  165  git add sort_env.sh 
+  166  git commit -m '1.3 sort_environment variable' sort_env.sh 
+  167  gedit xinchao.sh
+  168  bash xinchao.sh 
+  169  gedit xinchao.sh 
+  170  bash xinchao.sh 
+  171  man find
+  172  find -path /usr +20
+  173  find +20 -path /usr 
+  174  man find
+  175  find /usr -size 20
+  176  man find
+  177  ls -alt
+  178  ls
+  179  find -size 200
+  180  find ~/ size 20
+  181  find /usr -size +20M
+  182  ls
+  183  cd lab3/scripts/
+  184  ls
+  185  gedit tim_file.sh
+  186  bash tim_file.sh 
+  187  git add tim_file.sh
+  188  git commit -m '1.5 find file >20M' tim_file.sh
+  189  cd ~
+  190  ls| grep .*| wc -l
+  191  gedit file_an.sh
+  192  bash file_an.sh 
+  193  gedit file_an.sh
+  194  bash file_an.sh 
+  195  ls
+  196  mv file_an.sh ~/lab3/scripts/
+  197  cd lab3/scripts/
+  198  ls
+  199  git add file_an.sh
+  200  git commit -m '1.6 number of file' file_an.sh
+  201  uptime
+  202  time
+  203  date
+  204  gedit timee.sh
+  205  ps
+  206  ps -U root -u root u
+  207  man ps
+  208  man du
+  209  ls -alt
+  210  ll 
+  211  ls -a
+  212  ls -alt|grep '.[[:alpha:]]
+  213  1
+  214  ls -alt|grep '.[[:alpha:]]'|wc -l
+  215  1
+  216  ls -alt
+  217  ls -alt|grep 
+  218  ls -alt|grep '-r'
+  219  ls -alt|grep -r
+  220  grep --hel
+  221  ls --help
+  222  ls -f 
+  223  ls -d
+  224  ls
+  225  find -type f|wc -l
+  226  find ~/ -type f|wc -l
+  227  ls -l |grep ^-
+  228  ls
+  229  ls -a
+  230  ls -alt
+  231  ls -alt|grep ^-
+  232  ls -alt|grep ^-|grep .[[:alpha]]
+  233  ls -alt|grep ^-|grep .[[:alpha:]]
+  234  find ~ -maxdepth 1 -name ".*" -type f
+  235  find ю -maxdepth 1 -name ".*" -type f
+  236  find . -maxdepth 1 -name ".*" -type f
+  237  ls -alt
+  238  ls -alt |grep ^-
+  239  find . -maxdepth 1 -name ".*" -type f
+  240  find . -maxdepth 1 -name ".*" -type f|wc -l
+  241  pwd
+  242  ls
+  243  find /home/phuoc -maxdepth 1 -name ".*" -type f|wc -l
+  244  man find
+  245  ls -l|grep ^-
+  246  ls -l|grep ^-|wc c
+  247  ls -l|grep ^-|wc -l
+  248  echo "$USER"
+  249  history
+  250  ls
+  251  history > history_lab3.txt
+  252  exit
+  253  ps <
+  254  ps aux
+  255  cd ~/lab3/scripts/
+  256  ls
+  257  ps aux |grep root |wc -l
+  258  gedit cpu_sd.sh
+  259  bash cpu_sd.sh 
+  260  gedit cpu_sd.sh
+  261  bash cpu_sd.sh 
+  262  man ps
+  263  ps jax
+  264  ps aux 
+  265  ps aux --sort=%MEM
+  266  man ps
+  267  ps aux --sort %mem
+  268  ps aux --sort %mem |tail -n 10
+  269  ps aux --sort %mem |tail -n 5
+  270  gedit five_mem.sh
+  271  bash fi
+  272  bash five_mem.sh 
+  273  ls
+  274  gedit cpu_sd.sh 
+  275  man du
+  276  du ~
+  277  du ~|sort
+  278  man sort
+  279  du ~|sort -n
+  280  man du
+  281  du -d ~|sort -n
+  282  gedit khongbiet.sh
+  283  ls -alt
+  284  ls -al
+  285  cd ~
+  286  ls -al
+  287  ls -at
+  288  ls -lt
+  289  ls -l
+  290  man ls
+  291  ls - alt
+  292  ls
+  293  ls -alt
+  294  cd \
+  295  cd /
+  296  ls
+  297  ls -alt
+  298  cd /dev
+  299  ls -alt
+  300  cd ~/lab/sc
+  301  ~
+  302  cd ~/lab3/scripts/
+  303  ls
+  304  gedit typder.sh
+  305  cd /dev
+  306  bash typder.sh
+  307  cd -
+  308  ls
+  309  cp typder.sh ~/bin
+  310  cd ~/bin
+  311  ls
+  312  chmod 777 typder.sh 
+  313  cd /dev
+  314  typder
+  315  typder.sh
+  316  cd ~
+  317  ls
+  318  history >history_lab3-1.txt
