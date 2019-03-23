@@ -1,0 +1,993 @@
+    1  yum repolist
+    2  yum grouplist
+    3  rpm -pa |less
+    4  rpm -pa |wc -l
+    5  yum list installed |less
+    6  rpm -qa |grep gnuplot
+    7  yum search gnuplot
+    8  yum info gnuplot
+    9  sudo yum install gnuplot
+   10  rpm -ql gnuplot
+   11  rpm -qf /usr/bin/gnuplot-wx
+   12  yum deplist gnuplot
+   13  sudo rpm -e gnuplot-common
+   14  sudo yum remove gnuplot-common
+   15  yum repolist
+   16  rpm -qa
+   17  rpm -qa | wc -l
+   18  yum grouplist
+   19  yum repolist
+   20  yum list installed |less
+   21  yum list installed | grep gnuplot
+   22  sudo yum remove gnuplot-common
+   23  yum list installed | grep gnuplot
+   24  man yum
+   25  touch /etc/yum.repos.d/yandex.repo
+   26  cd /etc/
+   27  mkdir yum.repos.d
+   28  cd yum.repos.d
+   29  ls
+   30  touch yandex.repo
+   31  sudo touch yandex.repo
+   32  gedit yandex.repo 
+   33  sudo gedit yandex.repo 
+   34  sudo yum clean all
+   35  sudo yum repolist yandex
+   36  sudo yum install @development-tools rpmdev* rpm-sign
+   37  rpmbuild
+   38  cd
+   39  rpmdev-setuptree
+   40  cd ~rpmbuild/SOURCES
+   41  cd ~/rpmbuild/SOURCES
+   42  mkdir 565-1-1.0
+   43  cd 565-1-1.0/
+   44  vi 565-1
+   45  cat /etc/grub.conf
+   46  cat /boot/grub/menu.lst
+   47  ll /boot/grub
+   48  ll /etc | grep grub
+   49  gedit /etc/grub2.cfg
+   50  cat /etc/grub2.cfg
+   51  sudo cat /etc/grub2.cfg
+   52  sudo cat /etc/grub2.cfg |grep selinux
+   53  sudo cat /etc/grub2.cfg |grep -e selinux
+   54  sudo cat /etc/grub2.cfg |grep CONFIG
+   55  su
+   56  sesearch -A -s passwd_t -t passwd_exec_t
+   57  sesearch -A -s user_t -t passwd_exec_t
+   58  sesearch -A -s user_t -t passwd_t
+   59  exit
+   60  setenforce 1
+   61  seinfo
+   62  ping 8.8.8.8
+   63  sudo yum install setools-console
+   64  seinfo
+   65  whereis grub.conf
+   66  cat /usr/lib/grub
+   67  semanage login -l
+   68  sudo semanage login -l
+   69  su
+   70  ls /proc/filesystems 
+   71  cd /proc/fi
+   72  cd /proc/filesystems
+   73  cd /proc/
+   74  ls
+   75  ll /proc/ |grep selinux
+   76  ll /proc/ |grep se
+   77  cd ~
+   78  ll /boot/grub/
+   79  ll /boot/
+   80  ll /boot/grub2
+   81  sudo ll /boot//grub2
+   82  su
+   83  seinfo
+   84  seinfo -cfile -x
+   85  seinfo -cdir -x
+   86  seinfo -cblk_file -x
+   87  cat /etc/selinux/targeted/contexts/files/file_contexts.homedirs
+   88  su
+   89  touch filese
+   90  ls -Z filese
+   91  ls -Z ./filese
+   92  sesearch -T -s httpd_t
+   93  allow passwd_t passwd_exec_t : file entrypoint
+   94  sesearch -T -s httpd_t -t tmp_t
+   95  ausearch -m avc -ts recent
+   96  sudo ausearch -m avc -ts recent
+   97  su
+   98  allow passwd_t passwd_exec_t : file entrypoint;
+   99  sudo yum install heepd
+  100  sudo yum install httpd
+  101  jobs
+  102  top
+  103  reset
+  104  ls
+  105  cd rpmbuild/
+  106  ls
+  107  cd S
+  108  cd SOURCES/
+  109  ls
+  110  gedit 565-1-1.0/
+  111  ls
+  112  rm 565-1-1.0/
+  113  rmdir 565-1-1.0/
+  114  cd 565-1-1.0/
+  115  ls
+  116  cd ..
+  117  cd 565-1-1.0/
+  118  ls
+  119  ll
+  120  gedit 565-1
+  121  chmod +x 565-1 
+  122  mv 565-1 565-1.sh
+  123  ll
+  124  ./565-1.sh 
+  125  gedit 565-1.sh 
+  126  ./565-1.sh 
+  127  tar -cvzf 565-1-1.0.tar.gz 565-1-1.0
+  128  cd ..
+  129  ls
+  130  tar -cvzf 565-1-1.0.tar.gz 565-1-1.0
+  131  cd ../SPECS/
+  132  history
+  133  history > text1
+  134  mv text1 > text1.txt
+  135  mv text1  text1.txt
+  136  exit
+  137  history
+  138  dd if=/dev/zero of=./fs.img bs=1M count=10
+  139  losetup --find --show ./fs.img
+  140  losetup --list
+  141  mkfs -t ext4 /dev/loop0
+  142  su
+  143  ll
+  144  cp lab1-Working_with_filesystem lab1
+  145  ll
+  146  man ls
+  147  ll
+  148  ll ~/rpmbuild/
+  149  sudo apt-get install xorg openbox
+  150  sudo apt-get
+  151  ll /usr/bin/apt-get
+  152  sudo yum install -y xorg-xll-xauth xorg-xll-utils xorg-xll-fonts-* xorg-xll-apps xorg-xll-server
+  153  sudo yum install -y xorg-x11-xauth xorg-x11-utils xorg-x11-fonts-* xorg-x11-apps xorg-x11-server
+  154  gedit /etc/ssh/sshd_config
+  155  sudo gedit /etc/ssh/sshd_config 
+  156  su
+  157  sudo yum install policycoreutils-gui
+  158  yum repolist
+  159  yum grouplist
+  160  policycoreutils-gui
+  161  system-config-selinux 
+  162  gedit lab2.txt
+  163  gedit lab2-SELinux.txt 
+  164  su
+  165  ps xaf
+  166  ps xawf -eo pid,user,cgroup,args
+  167  ls -l /usr/lib/systemd/system/
+  168  ls -l /run/systemd/system/
+  169  ls -l /etc/systemd/system
+  170  ls -l /usr/lib/systemd/system/
+  171  systemctl -t help
+  172  systemctl status
+  173  systemctl --type=service
+  174  systemctl status auditd.service
+  175  systemctl is-active auditd.service
+  176  systemctl is-enabled auditd.service
+  177  systemctl list-dependencies --after auditd.service
+  178  systemctl list-dependencies --before auditd.service
+  179  systemctl list-units --type=service
+  180  systemctl list-units --typservice --all
+  181  systemctl list-units --type=service --all
+  182  systemctl list-units --type=socket --all
+  183  systemctl list-unit-files --type=service
+  184  systemctl --failed --type=service
+  185  systemctl status httpd.service
+  186  history > lab3-Working-with systemctl.txt
+  187  su
+  188  curl 127.0.0.1
+  189  systemctl status httpd.service
+  190  ps xaf
+  191  ps xawf -eo pid,user,cgroup,args
+  192  ll /usr/lib/systemd/system
+  193  ll /run/systemd/system/
+  194  ll /etc/systemd/system
+  195  systemctl -t help
+  196  systemctl status
+  197  systemctl --type=service
+  198  systemctl status auditd.service
+  199  systemctlis-active auditd.service
+  200  systemctl is-active auditd.service
+  201  systemctl is-enabled auditd.service 
+  202  systemctl list-dependencies --after auditd.service 
+  203  systemctl list-dependencies --before auditd.service 
+  204  systemctl list-units --type=service
+  205  systemctl list-units --type=service --all
+  206  systemctl list-units --type=socket --all
+  207  systemctl list-unit-files --type=service
+  208  systemctl --failed --type=service
+  209  hostname
+  210  sudo yum update
+  211  sudo apt install apache2
+  212  sudo yum -y install httpd
+  213  systemctl status httpd.service
+  214  curl 127.0.0.1
+  215  ping 8.8.8.8
+  216  curl 127.0.0.1
+  217  systemctl status httpd.service
+  218  curl 127.0.0.1
+  219  restart
+  220  history
+  221  ls
+  222  history > lab3.txt
+  223  sudo systemctl start httpd
+  224  su
+  225  sudo yum install httpd
+  226  systemctl status httpd.service
+  227  systemctl start httpd.service
+  228  systemctl status httpd.service
+  229  curl 127.0.0.1
+  230  systemctl status httpd.servicesu
+  231  su
+  232  systemctl status httpd.service
+  233  systemctl start httpd.service
+  234  systemctl status httpd.service
+  235  systemctl restart httpd.service
+  236  systemctl status httpd.service
+  237  systemctl stop httpd.service
+  238  systemctl enable httpd.service
+  239  systemctl disable httpd.service
+  240  systemctl mask httpd.service
+  241  systemctl unmask httpd.service
+  242  systemctl list-units --type=target
+  243  systemctl list-units --type=target --all
+  244  systemctl get-default
+  245  ls -l /etc/systemd/system/default.target
+  246  systemctl set-default multi-user.target 
+  247  systemctl isolate multi-user.target
+  248  systemctl --no-wall rescue
+  249  history
+  250  history > lab3-Working-with-service.txt
+  251  systemctl poweroff
+  252  touch /etc/systemd/system/gedit.service
+  253  su
+  254  cat lab3.txt
+  255  gedit lab3.txt
+  256  exit
+  257  gpg2 --gen-key
+  258  sudo yum install haveged
+  259  sudo systemctl enable hevege
+  260  sudo yum install heveged
+  261  sudo systemctl enable heveged
+  262  sudo systemctl enable haveged
+  263  sudo systemctl start haveged
+  264  sudo yum update
+  265  sudo systemctl start haveged
+  266  sudo systemctl update
+  267  sudo yum install haveged
+  268  sudo systemctl enable haveged
+  269  sudo systemctl start haveged
+  270  startx
+  271  sudo systemctl enable haveged
+  272  sudo yum install heveged
+  273  sudo yum install haveged
+  274  cat /dev/random
+  275  cat /dev/random | rngtest -c 1000
+  276  systemctl systemctl --type=service | haveged
+  277  systemctl --type=service | haveged
+  278  systemctl --type=service |grep  haveged
+  279  systemctl status haveged.service
+  280  yum install haveged
+  281  sudo yum install haveged
+  282  ls
+  283  cat lab3.txt 
+  284  cat lab2.txt
+  285  ls
+  286  cat lab3-Working-with-service.txt 
+  287  ls
+  288  sudo systemctl enable haveged
+  289  sudo yum install haveged
+  290  sudo yum install haveged --nogpgchech
+  291  sudo yum install haveged --no-gpgchech
+  292  sudo yum install haveged --no-gpgcheck
+  293  sudo yum install haveged --nogpgcheck
+  294  cd ~/rpmbuild/SPECS/
+  295  ls
+  296  ~/rpmbuild/RPMS/
+  297  cd ~/rpmbuild/RPMS/
+  298  ls
+  299  cd x86_64/
+  300  ls
+  301  cd ../noarch/
+  302  ls
+  303  cd ~/rpmbuild/
+  304  ls
+  305  cd SRPMS/
+  306  ls
+  307  exit
+  308  cd ~
+  309  systemctl status| grep swap
+  310  gedit swap-mornitor.service
+  311  netstat
+  312  netstat -atp
+  313  netstat -atp | grep 'ESTABLISHED.*sshd' | tr -s ' ' ' ' | cut -d' ' -f8 | grep -v "\["
+  314  netstat -atp | grep 'ESTABLISHED.*sshd' 
+  315  swapon --all
+  316  swapon --sumary
+  317  swapon --help
+  318  ls
+  319  swapon filese
+  320  cat /proc/swaps
+  321  ll /proc
+  322  cat /proc/swaps
+  323  ll /dev/sd*
+  324  ll /dev/
+  325  ll /dev/ |grep disk
+  326  free -h
+  327  sudo swapon --show
+  328  swapon --show
+  329  swapon --show | cut -d' ' -f3
+  330  swapon --show | cut -d' ' -f4
+  331  swapon --show | cut -d' ' -f5
+  332  swapon --show | cut -d' ' -f2
+  333  swapon --show |re -s  cut -d' ' -f2
+  334  swapon --show |tr -s ' ' ' '|  cut -d' ' -f2
+  335  swapon --show |tr -s ' ' ' '|  cut -d' ' -f3
+  336  swapon --show |tr -s ' ' ' '|  cut -d' ' -f3|grep -v
+  337  swapon --show |tr -s ' ' ' '|  cut -d' ' -f3|grep .
+  338  swapon -p 1
+  339  swapon -a
+  340  man swapon
+  341  netstat -atp | grep 'ESTABLISHED.*sshd' | tr -s ' ' ' ' | cut -d' ' -f8 | grep -v "\["
+  342  su
+  343  ls
+  344  touch file.sh
+  345  troff
+  346  troff file.sh
+  347  groff file.sh
+  348  manpath
+  349  gedit service
+  350  mv service service.7
+  351  gzip service.7
+  352  sudo cp service.7.gz /usr/share/man/man7
+  353  man service
+  354  gedit service.8
+  355  gedit service.7
+  356  gzip service.7
+  357  sudo cp service.7.gz /usr/share/man/man7
+  358  man service
+  359  gedit swap-monitor.8
+  360  gzip swap-monitor.8
+  361  manpath
+  362  sudo cp swap-monitor.8.gz /usr/share/man/man8
+  363  man swap-monitor
+  364  gedit swap-monitor.8
+  365  swapon -all
+  366  cat /proc/swaps
+  367  swapon -s
+  368  ll /dev/sd*
+  369  swapon -s | tr ' ' ' ' | cut -d' ' -f3
+  370  swapon -s |tr -s ' ' ' ' |cut -d' ' -f3
+  371  swapon -s |tr -s ' ' ' ' |cut -d' ' -f4
+  372  swapon -s |tr -s ' ' ' ' |cut -d' ' -f1
+  373  swapon -s 
+  374  swapon -s | cut -d' ' -f3
+  375  swapon -s | tr -s ' ' ' '
+  376  swapon -s
+  377  swapon -s| head -1
+  378  swapon -s| head -2
+  379  swapon -s| head 0
+  380  man head
+  381  swapon -s| tail -1
+  382  swapon -s| tail -1| tr -s ' ' ' '| cut -d' ' -f4
+  383  swapon -s| tail -1| cut -d' ' -f4
+  384  swapon -s| tail -1| cut -d' ' -f 4
+  385  swapon -s| tail -1| cut -d' ' -f 3
+  386  swapon -s| tail -1| cut -d' ' -f 1
+  387  swapon -s| tail -1| tr -s ' ' ' '|cut -d' ' -f 4
+  388  swapon -s| tail -1| tr -s ' ' ' '|cut -d' ' -f 3
+  389  swapon -s| tail -1| tr -s ' ' ' '|cut -d' ' -f3
+  390  swapon -s| tail -1| tr -s ' ' ' '|cut -d ' ' -f 3
+  391  swapon -s| tail -1| tr -s ' ' ' '|cut -d' ' -c 3
+  392  man cut
+  393  swapon -s| tail -1|tr -s ' ' ' '|cut -d' ' -c 3
+  394  swapon -s| tail -1|tr -s ' ' ' '
+  395  swapon -s| tail -1|tr -s ' ' ' '|cut -d' ' -f 8
+  396  swapon -s| tail -1|tr -s ' ' ' '|cut -d' ' -f 10
+  397  swapon -s| tail -1|tr -s ' ' ' '|cut -d' ' 
+  398  swapon -s| tail -1|tr -s ' ' ' '|cut -d' ' -f1
+  399  swapon -s| tail -1|tr -s ' ' ' '|cut -d' ' -f2
+  400  swapon -s| tail -1|tr -s ' ' ' '|cut -d' ' -f3
+  401  swapon -s
+  402  swapon -s| tail -1|cut -d' ' -f 1
+  403  swapon -s| tail -1|cut -d' ' -f 2
+  404  swapon -s| tail -1|cut -d' ' -f 3
+  405  swapon -s| tail -1|cut -d' ' -f 7
+  406  swapon -s| tail -1|cut -d' ' -f 8
+  407  swapon -s| tail -1|cut -d' ' -f 10
+  408  swapon -s| tail -1|cut -d' ' -f 15
+  409  swapon -s| tail -1
+  410  swapon -s| tail -l > swap
+  411  cut -d' ' -f3
+  412  man column
+  413  swapon -s| tail -l |column -c4
+  414  cat /proc/swaps
+  415  cat /proc/swaps|tr -s ' ' ' ' | cut -d' ' -f4
+  416  cat /proc/swaps|tail -1
+  417  cat /proc/swaps|tail -1| cut -d' ' -f1
+  418  cat /proc/swaps|tail -1| cut -d' ' -f2
+  419  cat /proc/swaps|tail -1| cut -d' ' -f3
+  420  cat /proc/swaps|tail -1| cut -d' ' -f10
+  421  cat /proc/swaps|tail -1|tr -s ' ' ' '
+  422  cat /proc/swaps|tail -1|tr -s ' ' ' '| tr -s ' ' ' '
+  423  cat /proc/swaps|tail -1|tr -s ' ' ':'
+  424  free 
+  425  free -g
+  426  free| tail -1
+  427  free| tail -1|tr -s ' ' ' '
+  428  free| tail -1|tr -s ' ' ' '| cut -d' ' f2
+  429  free| tail -1|tr -s ' ' ' '| cut -d' ' -f2
+  430  free| tail -1|tr -s ' ' ' '| cut -d' ' -f3
+  431  man swap-monitor
+  432  gedit swap-monitor.sh
+  433  chmod 775 swap-monitor.sh
+  434  ./swap-monitor.sh
+  435  gedit swap-monitor.sh
+  436  ./swap-monitor.sh
+  437  gedit swap-monitor.sh
+  438  ./swap-monitor.sh
+  439  gedit swap-monitor.sh
+  440  ./swap-monitor.sh
+  441  gedit swap-monitor.sh
+  442  ./swap-monitor.sh
+  443  gedit swap-monitor.sh
+  444  ./swap-monitor.sh
+  445  gedit swap-monitor.sh
+  446  ls
+  447  gedit swap-monitor.sh
+  448  gedit swap-monitor.8.gz 
+  449  ls
+  450  gedit service.7.gz 
+  451  gedit swap-monitor.8.gz 
+  452  tree
+  453  pstree
+  454  ;ls
+  455  ls
+  456  cat swap
+  457  rm swap
+  458  gedit swap-monitor.sh
+  459  ./swap-monitor.sh
+  460  gedit swap-monitor.sh
+  461  ./swap-monitor.sh
+  462  gedit swap-monitor.sh
+  463  ./swap-monitor.sh
+  464  gedit swap-monitor.sh
+  465  ./swap-monitor.sh
+  466  gedit swap-monitor.sh
+  467  ./swap-monitor.sh
+  468  gedit swap-monitor.sh
+  469  ./swap-monitor.sh
+  470  gedit swap-monitor.sh
+  471  ./swap-monitor.sh
+  472  gedit swap-monitor.sh
+  473  ./swap-monitor.sh
+  474  gedit swap-monitor.sh
+  475  ./swap-monitor.sh
+  476  gedit swap-monitor.sh
+  477  ./swap-monitor.sh
+  478  gedit swap-monitor.sh
+  479  ./swap-monitor.sh
+  480  gedit swap-monitor.sh
+  481  ./swap-monitor.sh
+  482  gedit swap-monitor.sh
+  483  ./swap-monitor.sh
+  484  gedit swap-monitor.sh
+  485  ./swap-monitor.sh
+  486  gedit swap-monitor.sh
+  487  ./swap-monitor.sh
+  488  gedit swap-monitor.sh
+  489  ./swap-monitor.sh
+  490  free
+  491  top
+  492  swapon
+  493  free
+  494  free =g
+  495  free -g
+  496  free -m
+  497  free -b
+  498  free -m
+  499  gedit swap-monitor.sh
+  500  free -m -s
+  501  free -m -s 5
+  502  free -m -s 5 -c 2
+  503  free -ms 5
+  504  man gree
+  505  man free
+  506  free -ms 5
+  507  swappon
+  508  swapon
+  509  free -m
+  510  free -b
+  511  free -m
+  512  dd if=/dev/zero of=/swapfile1 bs=1M count=10
+  513  sudo dd if=/dev/zero of=/swapfile1 bs=1M count=10
+  514  chown root:root /swapfile1
+  515  sudo chown root:root /swapfile1
+  516  sudo chmod 066 /swapfile1
+  517  mkswap /swapfile1
+  518  sudo mkswap /swapfile1
+  519  su
+  520  ls
+  521  gedit swap-monitor.sh
+  522  gedit test-creat-swap
+  523  gedit test-creat-swap.sh
+  524  chmod 775 test-creat-swap.sh 
+  525  ./test-creat-swap.sh 
+  526  swapon -s
+  527  gedit test-creat-swap.sh
+  528  ll / | grep swap
+  529  gedit test-creat-swap.sh
+  530  ./test-creat-swap.sh 
+  531  ll / | grep swap
+  532  gedit test-creat-swap.sh
+  533  ./test-creat-swap.sh 
+  534  ll / | grep swap
+  535  gedit test-creat-swap.sh
+  536  ./test-creat-swap.sh 
+  537  gedit test-creat-swap.sh
+  538  ./test-creat-swap.sh 
+  539  gedit test-creat-swap.sh
+  540  ./test-creat-swap.sh 
+  541  ll / | grep swap
+  542  gedit test-creat-swap.sh
+  543  ./test-creat-swap.sh 
+  544  ll / | grep swap
+  545  swapoff /swapfile
+  546  sudo swapoff /swapfile
+  547  rm /swapfile
+  548  sudo rm /swapfile
+  549  free -m
+  550  swapon
+  551  sudo rm swapfile1
+  552  sudo rm /swapfile1
+  553  ./test-creat-swap.sh 
+  554  free -m
+  555  swapon
+  556  swapoff /swapfile
+  557  sudo swapoff /swapfile
+  558  sudo rm /swapfile
+  559  gedit test-creat-swap.sh 
+  560  ./test-creat-swap.sh 10
+  561  sudo swapoff /swapfile
+  562  sudo rm /swapfile
+  563  ./test-creat-swap.sh 100
+  564  free 0m
+  565  free -m
+  566  sudo rm /swapfile
+  567  sudo swapoff /swapfile
+  568  sudo rm /swapfile
+  569  gedit test-creat-swap.sh 
+  570  ./test-creat-swap.sh 
+  571  ll / |grep swap
+  572  gedit test-creat-swap.sh 
+  573  sudo rm swapfile_5
+  574  sudo rm /swapfile_5
+  575  ls
+  576  gedit swap_monitor.sh
+  577  ll
+  578  gedit swap-monitor.sh
+  579  ./swap-monitor.sh 
+  580  gedit swap-monitor.sh
+  581  ./swap-monitor.sh 
+  582  gedit swap-monitor.sh
+  583  ./swap-monitor.sh 
+  584  gedit swap-monitor.sh
+  585  ./swap-monitor.sh 
+  586  gedit swap-monitor.sh
+  587  ll / |grep swap
+  588  gedit swap-monitor.sh
+  589  ./swap-monitor.sh 
+  590  ll / |grep swap
+  591  sudo swapoff /swapfile1
+  592  sudo rm /swapfile1
+  593  gedit swap-monitor.sh
+  594  ./swap-monitor.sh 
+  595  ll / |grep swap
+  596  sudo swapoff /swapfile2
+  597  sudo rm /swapfile2
+  598  gedit swap-monitor.sh
+  599  ./swap-monitor.sh 
+  600  gedit swap-monitor.sh
+  601  ./swap-monitor.sh 
+  602  gedit swap-monitor.sh
+  603  ./swap-monitor.sh 
+  604  gedit swap-monitor.sh
+  605  pstree |grep swap
+  606  ll /var/log/
+  607  sudo touch /var/log/myapp.log
+  608  logger -f /var/log/myapp.log
+  609  logger "Hello"
+  610  sudo cat /var/log/myapp.log
+  611  sudo cat /var/log/messages
+  612  sudo tail -1 /var/log/messages
+  613  sudo tail -1 /var/log/messages >> /var/log/myapp.log
+  614  cat /var/log/myapp.log
+  615  sudo tail -1 /var/log/messages
+  616  sudo tail -1 /var/log/messages >> /var/log/myapp.log
+  617  ll /var/log/myapp.log 
+  618  ls -d  /var/log/
+  619  ll -d  /var/log/
+  620  ll /var/log/myapp.log 
+  621  sudo echo "Helo" >> /var/log/myapp.log 
+  622  sudo rm /var/log/myapp.log 
+  623  sudo touch /var/log/myservice
+  624  sudo echo "hello" > /var/log/myservice 
+  625  sudo rm /var/log/myservice 
+  626  touch /var/log/myservice
+  627  tree
+  628  cd .
+  629  cd /
+  630  tree
+  631  cd ~
+  632  logger "heel"
+  633  journalctl -e
+  634  cd ~
+  635  touch ~/test.log
+  636  logger "hellllo"
+  637  sudo tail -1 /var/log/messages >> ~/test.log
+  638  cat ~/test.log
+  639  logger "aaaa"
+  640  sudo cat /var/log/messages
+  641  tail /var/log/messages
+  642  ./swap-monitor.sh 
+  643  cat ~/swap-service.log 
+  644  sudo cat  /var/log/messages
+  645  sudo cat  /var/log/messages | grep tnorus
+  646  gedit swap-monitor.sh 
+  647  ./swap-monitor.sh 
+  648  sudo cat /var/log/messages | grep tnorus
+  649  gedit swap-monitor.sh
+  650  ./swap-monitor.sh 
+  651  sudo cat /var/log/messages | grep tnorus
+  652  ./swap-monitor.sh 
+  653  jobs
+  654  gedit swap-monitor.sh
+  655  gedit testtrap.sh
+  656  chmod 775 testtrap.sh
+  657  ./testtrap.sh
+  658  gedit testtrap.sh
+  659  ./testtrap.sh
+  660  gedit testtrap.sh
+  661  ./testtrap.sh
+  662  gedit testtrap.sh
+  663  ./testtrap.sh
+  664  sudo cat /var/log/messages |grep tnorus
+  665  gedit testtrap.sh
+  666  ./testtrap.sh
+  667  gedit swap-monitor.sh
+  668  ./swap-monitor.sh 
+  669  cat ~/swap-service.log 
+  670  ./swap-monitor.sh 
+  671  cat ~/swap-service.log 
+  672  gedit swap-monitor.sh
+  673  ./swap-monitor.sh 
+  674  sudo cat /var/log/messages |grep tnorus
+  675  gedit swap-monitor.sh
+  676  ./swap-monitor.sh 
+  677  sudo cat /var/log/messages
+  678  gedit swap-service.log 
+  679  gedit swap-monitor.sh
+  680  ls
+  681  gedit testtrap.sh 
+  682  ./testtrap.sh 
+  683  ./testtrap.sh 
+  684  gedit testtrap.sh 
+  685  ./testtrap.sh 
+  686  sudo cat /var/log/messages
+  687  clear
+  688  ls -al ~/.ssh
+  689  ssh-ketgen -t rsa -b 4096 -C "maiphuochd@gmail.com"
+  690  ssh-keygen -t rsa -b 4096 -C "maiphuochd@gmail.com"
+  691  eval $(ssh-agent -s)
+  692  ssd-add ~/.ssh/id_rsa
+  693  ssh-add ~/.ssh/id_rsa
+  694  clip < ~/.ssh/id_rsa.pub
+  695  cat ~/.ssh/id_rsa.pub
+  696  ssh -T git@github.com
+  697  git init
+  698  sudo yum install git
+  699  git --version
+  700  git init
+  701  git config --global user.name "MaiPhuoc"
+  702  git config --global user.email "maiphuochd@gmail.com"
+  703  git config --list
+  704  git config core.editor gedit
+  705  git clone git@github.com:MaiPhuoc/Lab_linux.git
+  706  ls
+  707  cd Lab_linux/
+  708  ls
+  709  cp ~/swap-monitor.sh ~/Lab_linux/
+  710  ls
+  711  git add swap-monitor.sh
+  712  git commit -m "Add trap and logger"
+  713  git remote add origin git@github.com:MaiPhuoc/Lab_linux.git
+  714  git remote add origin
+  715  git push -u origin master
+  716  history
+  717  cd ~
+  718  ls
+  719  mkdir lab7-Working_with_filesystem
+  720  mv lab1-Working_with_filesystem.txt ~/lab7-Working_with_filesystem/
+  721  cd lab7-Working_with_filesystem/
+  722  ls
+  723  cat lab1-Working_with_filesystem.txt 
+  724  mv lab1-Working_with_filesystem.txt lab7-Working_with_filesystem.txt
+  725  cd ..
+  726  mv lab7-Working_with_filesystem ~/lab7
+  727  ls
+  728  ll -d lab7
+  729  chmod -x lab7
+  730  ll -d lab7
+  731  cd lab7
+  732  ls
+  733  sudo cd lab7
+  734  ls
+  735  su
+  736  ls
+  737  cat lab1.txt 
+  738  cd lab7/
+  739  ls -d lab7
+  740  ll -d lab7
+  741  id
+  742  ll
+  743  su
+  744  ls
+  745  cat lab7
+  746  cd lab7
+  747  cd ~/
+  748  ls
+  749  touch lab7.txt
+  750  gedit lab7.txt
+  751  cat lab1
+  752  cat lab1.txt 
+  753  git clone git@github.com:MaiPhuoc/lab_OSS.git
+  754  ls
+  755  cd lab_OSS/
+  756  ls
+  757  cd ..
+  758  mv lab7.txt ~/lab_OSS/
+  759  cat lab2.txt
+  760  ls
+  761  cat lab2-SELinux.txt 
+  762  cat lab2.txt 
+  763  cat lab2-SELinux.txt 
+  764  mv lab2-SELinux.txt ~/lab_OSS/
+  765  ls
+  766  cp ~/lab_OSS/lab2-SELinux.txt ~/
+  767  ls
+  768  cat lab3.txt 
+  769  cat lab3-Working-with-service.txt 
+  770  cat lab3.txt 
+  771  cp lab3.txt ~/lab_OSS/
+  772  history
+  773  gedit lab3-Working-with-service.txt 
+  774  ls
+  775  cat history.txt 
+  776  head -50 history.txt > lab4.txt
+  777  gedit lab4.txt 
+  778  logger
+  779  man logger
+  780  logger "Hello"
+  781  cat /var/log/messages
+  782  sudo cat /var/log/messages
+  783  sudo cat /var/log/kern.log
+  784  sudo ll /var/log/
+  785  sudo ls /var/log/
+  786  sudo cat /var/log/messages-20190310
+  787  sudo cat /var/log/messages-20190320 |tail
+  788  sudo cat /var/log/messages |tail
+  789  sudo cat /var/log/messages 
+  790  clear
+  791  logger -f swapservice "hello"
+  792  sudo mkdir /var/log/swapservice
+  793  sudo touch /var/log/swapservice
+  794  logger -f swapservice "hello"
+  795  logger -f /var/log/swapservice "hello"
+  796  cat /var/log/swapservice
+  797  sudo cat /var/log/swapservice
+  798  ls /var/log |grep swap-
+  799  ls /var/log |grep swap
+  800  ll /var/log |grep swap
+  801  logger -s "hello" 2> /var/log/swapservice
+  802  echo time
+  803  ls
+  804  gedit swap-monotor.sh
+  805  gedit swap-monitor.sh
+  806  ./swap-monitor.sh 
+  807  jobs
+  808  killall 
+  809  kill -9 swapservice
+  810  id
+  811  pid
+  812  jobs -l
+  813  kill -9 24594
+  814  jobs
+  815  ./swap-monitor.sh 
+  816  jobs
+  817  gedit swap-monitor.sh
+  818  free -b |grep 'Swap' | tr -s ' '
+  819  free
+  820  ll / |grep swap
+  821  ls
+  822  gedit swap-monitor.sh
+  823  ps -d
+  824  ps -d |grep swap
+  825  kill -USR1 27347
+  826  kill -USR1 27353
+  827  ps -d |grep swap
+  828  kill -USR1 27513
+  829  ps -d |grep swap
+  830  kill -USR1 swap-monitor.sh
+  831  kill -USR1 27519
+  832  ps -d |grep swap
+  833  kill -USR1 27983
+  834  kill -USR1 27989
+  835  ps -d |grep swap
+  836  kill -USR1 28091
+  837  ps -d |grep swap
+  838  kill -USR1 28177
+  839  kill -USR1 28183
+  840  ps -d |grep swap
+  841  kill -USR1 28177
+  842  ps -d |grep swap
+  843  kill -USR1 28177
+  844  sudo cat /var/log/messages 
+  845  journalctl -e
+  846  ps -d |grep swap
+  847  kill -USR1 28177
+  848  ps -d |grep swap
+  849  kill -USR1 28177
+  850  ps -d |grep test
+  851  kill -USR1 29197
+  852  ps -d |grep test
+  853  kill -USR1 29244
+  854  ps -d |grep test
+  855  kill -USR1 29302
+  856  lw
+  857  ls
+  858  ll
+  859  rm ystemctl\ list-units\ --type\=service 
+  860  rm ystemctl\ status\ auditd.service 
+  861  ls
+  862  cat lab4.txt 
+  863  mv lab4.txt ~/lab_OSS/
+  864  cd ~/lab_OSS/
+  865  ls
+  866  mkdir lab11-Package-management
+  867  mv lab4.txt lab11-Package-management/
+  868  cd lab11-Package-management/
+  869  ls
+  870  mv lab4.txt lab11.txt
+  871  git add lab11.txt
+  872  git commit -m 'Coming soon'
+  873  git push -u origin master 
+  874  ldd /bin/login |grep pam
+  875  ls -l /lib64/libpam*
+  876  ls -l /lib64/security
+  877  sudo gedit /etc/pam.d/su
+  878  ll /
+  879  cat /etc/passwd
+  880  ls
+  881  gedit test-su.sh
+  882  ./test-su.sh
+  883  cat /etc/passwd
+  884  man su
+  885  man hostname
+  886  su -c "hostname mephi"
+  887  sudo gedit /etc/pam.d/su
+  888  gedit /etc/pam.d/su
+  889  sudo gedit /etc/pam.d/su
+  890  usermod -aG wheel user1
+  891  sudo usermod -aG wheel user1
+  892  sudo useradd -mG wheel user1
+  893  whoami
+  894  su -user1
+  895  su - user1
+  896  su -u user1
+  897  su - user1
+  898  startx
+  899  su - user1
+  900  sudo passwd user1
+  901  history
+  902  ls
+  903  su - user1
+  904  su
+  905  tcpdump -i en0
+  906  man tcpdump
+  907  history
+  908  sudo gedit /etc/pam.d
+  909  sudo cat /etc/pam.d
+  910  cd /etc/pam.d
+  911  ls
+  912  ls -l /lib64/libpam*
+  913  ls -l /lib64/security/
+  914  ll /etc/security/
+  915  sudo gedit /etc/pam.d/su
+  916  sudo vi /etc/pam.d/su
+  917  cat /lib64/security
+  918  ll /lic64/security
+  919  sudo ll /lib64/security
+  920  sudo ls -l /lib64/security
+  921  sudo cat /etc/pam.conf
+  922  sudo ls -l  /etc/pam.conf
+  923  sudo ls -l /etc |grep pam
+  924  sudo cat su
+  925  sudo cat /etc/login.defs
+  926  sudo cat su
+  927  ls
+  928  sudo cat sudo
+  929  cd ..
+  930  ls
+  931  ls |grep pam
+  932  man pam_limits
+  933  ll /etc/security
+  934  find / -type f -name system-auth
+  935  find / -type f -name system-auth 2> /dev/null
+  936  sudo find / -type f -name system-auth
+  937  cat /etc/pam.d/system-auth
+  938  cd ~
+  939  touch check_user.c
+  940  gedit check_user.c
+  941  su
+  942  gedit check_user.c
+  943  ls
+  944  cat lab3.txt 
+  945  gedit lab3.txt 
+  946  ps -e | grep gedit
+  947  ls /etc/systemd/system/ |grep gedit
+  948  gedit
+  949  gnomesu gedit
+  950  gksu gedit
+  951  kdesu kate
+  952  startx
+  953  gedit
+  954  vim check_user.c
+  955  cat check_user.c 
+  956  vim check_user.c
+  957  ls
+  958  gedit check_user.c
+  959  su
+  960  ./check_user userchi
+  961  ./check_user tnorus
+  962  su - root
+  963  su - root
+  964  ls
+  965  ./check_user user1
+  966  ./check_user root
+  967  su - root
+  968  ls
+  969  ./check_user 
+  970  ./check_user tnorus
+  971  ./check_user tnorus user1
+  972  ./check_user user1
+  973  su - user1
+  974  ls
+  975  ./check_user user1
+  976  ./check_user userchi
+  977  su -
+  978  ./check_user user1
+  979  ./check_user userchi
+  980  ./check_user tnorus
+  981  ./check_user user1
+  982  ./check_user userchi
+  983  sudo ./check_user user1
+  984  ls
+  985  exit
+  986  su
+  987  gedit /etc/securetty 
+  988  gedit /etc/pam.d/login
+  989  man pam_pwquality
+  990  vim /etc/security/pwquality.conf 
+  991  man pam_limits
+  992  gedit /etc/security/limits.conf 
+  993  history >>lab10.txt
